@@ -1,0 +1,113 @@
+#lg-header{
+  display: none;
+}
+
+
+
+/* Mobile naviagtion at the bottom(fixed) */
+#mobile-nav{
+  display: block;
+  background-color: white;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  bottom: 0px;
+  z-index: 3;
+}
+#mobile-nav::before{
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 4;
+}
+#mobile-nav > .m-nav-links{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  max-width: 480px;
+  margin: 0px auto;
+}
+#mobile-nav > .m-nav-links > button{
+  min-width: 50px;
+  max-width: 80px;
+  aspect-ratio: 1/1;
+  background-color: white;
+  flex-grow: 1;
+}
+#mobile-nav > .m-nav-links > button > svg{
+  width: 38px;
+}
+
+
+
+/* Header for mobile version - top of the page */
+#mobile-top-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logo text at the top */
+#mobile-top-header > .mobile-logo > h1{
+  margin: 15px 0px;
+}
+
+/* Navigation links at the top */
+#mobile-top-header > .mobile-nav-links {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 2px solid #ecf1f4;
+}
+#mobile-top-header > .mobile-nav-links> a{
+  flex-grow: 1;
+  margin: 0px 1px;
+
+  height: 50px;
+  width:100%;
+  text-decoration: none;
+  margin: auto auto;
+}
+#mobile-top-header > .mobile-nav-links> a > p{
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+
+/* Hero/Intro section styling for mobile version */
+#intro-section{
+  margin: 20px auto;
+}
+#intro-section > p{
+  width: 90%;
+  /* margin: 20px auto; */
+}
+
+
+
+/* Large image container */
+.site-sections > .main-img{
+  width: 100%;
+}
+/* Text description for each section */
+.site-sections > .sec-para{
+  max-width: 90%;
+  text-align: justify;
+}
+
+
+
+.site-sections > .sub-sec > .sub-sec-wrapper > .sub-item{
+  margin: 0px 10px;
+}
+.site-sections > .sub-sec > .sub-sec-wrapper > .sub-item > img {
+  width: 100%;
+}

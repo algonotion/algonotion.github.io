@@ -1,0 +1,41 @@
+/* Global class that add the underline to text elements */
+.title-text-underline{
+  position: relative;
+  width: fit-content;
+}
+.title-text-underline::before{
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  background-color: black;
+}
+
+
+
+/* set color to red */
+.set-to-red{
+  color: #fc2d49;
+}
+
+
+
+/* Mobile top header active/inactive color */
+.mobile-top-header-inactive-btn{
+  background-color: #ecf1f4;
+  color: #aeaeae;
+}
+.mobile-top-header-inactive-btn:hover{
+  background-color: #ecf1f4;
+  color: #aeaeae;
+}
+.mobile-top-header-active-btn{
+  background-color: #ffffff;
+  color: #000000;
+}
+.mobile-top-header-active-btn:hover{
+  background-color: #ffffff;
+  color: #000000;
+}
